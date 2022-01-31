@@ -1,9 +1,9 @@
 const path = require('path');
 
 const people = `
-Name           |  NEUID   | Slack handle | github ID
-Brett Ritter   | ???      | @swiftone    | swiftone
-
+Name               |  NEUID   | Slack handle      | github ID
+Brett Ritter       | ???      | @swiftone         | swiftone
+Sravya Sree Ogirala| 001548791| @SravyaSreeOgirala| sravyasree12
 `.split('\n').filter( truthy => truthy );
 
 if (require.main === module) {
