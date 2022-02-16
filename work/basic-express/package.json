@@ -1,0 +1,11 @@
+{
+    "name": "basic-express",
+    "version": "1.0.0",
+    "description": "Chat application to use basic express",
+    "main": "server.js",
+    "author": "Sravya Sree",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.16.3"
+    }
+  }

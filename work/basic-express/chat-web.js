@@ -1,3 +1,5 @@
+const chat = require("./chat");
+
 const chatWeb = {
   chatPage: function(chat) {
     // Fill in anything below!
@@ -5,6 +7,7 @@ const chatWeb = {
       <!doctype html>
       <html>
         <head>
+          <link rel="stylesheet" type="text/css" href="styles.css">
           <title>Chat</title>
         </head>
         <body>
@@ -21,12 +24,17 @@ const chatWeb = {
   },
 
   getMessageList: function(chat) {
-    return `<ol class="messages">` +
-      // Fill in!
+    return `<h3 style="header"> Chat </h3>
+    <ol class="messages">` +
+      // Fill in! 
+      Object.values(chat.messages).map(
+        obj => `<ul><b>${obj.sender}</b>: ${obj.text}  <i class='timestamp'>Sent at ${obj.timestamp}</i></ul>`
+        ).join(''); +
       `</ol>`;
   },
   getUserList: function(chat) {
-    return `<ul class="users">` +
+    return `<h3> Users </h3>
+    <ul class="users">` +
     Object.values(chat.users).map( user => `
       <li>
         <div class="user">
@@ -38,6 +46,14 @@ const chatWeb = {
   },
   getOutgoing: function() {
     // Fill in!
+    return `
+    <form action="/chat" method="POST"><br>
+    <input type="hidden" name="sender" value="Sravya"><br>
+    <input placeholder="Your Message Here" type="text" name="text"><br>
+    <br>` + 
+    `<button type="submit">Send</button>
+    </form>`
   }
+  
 };
 module.exports = chatWeb;
