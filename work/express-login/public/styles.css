@@ -1,0 +1,65 @@
+
+form input[type=text]{
+    width: 50%;
+    font-size: large;
+    padding: 13px 20px;
+    margin: 6px 0;
+    border: 3px solid black;
+    display: block;
+}
+
+#loginButton {
+    background-color: rgb(15, 189, 241);
+    color: white;
+    text-align: center;
+    font-size: large;
+    padding: 14px 20px;
+    display:block;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+
+#updateButton {
+    background-color: rgb(15, 189, 241);
+    color: white;
+    text-align: center;
+    font-size: large;
+    padding: 14px 20px;
+    background-image: url(https://img.icons8.com/external-kiranshastry-solid-kiranshastry/10/ffffff/external-edit-interface-kiranshastry-solid-kiranshastry-1.png);
+    background-position: right;
+    display:inline;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+
+form button {
+    background-color: rgb(15, 189, 241);
+    color: white;
+    text-align: center;
+    font-size: large;
+    padding: 14px 20px;
+    display:inline;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+
+form button:hover {
+    background-color: #04AA6D;
+    color: white;
+    opacity: 0.8;
+}
+
+form button:active{
+    background-color: #04AA6D;
+    transform: translateY(4px);
+}
+
+  
+
+

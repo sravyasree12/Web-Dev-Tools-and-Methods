@@ -1,0 +1,13 @@
+{
+    "name": "express-login",
+    "version": "1.0.0",
+    "description": "Login Page in express",
+    "main": "server.js",
+    "author": "Sravya Sree",
+    "license": "ISC",
+    "dependencies": {
+        "cookie-parser": "^1.4.6",
+        "express": "^4.16.3",
+        "uuid": "^8.3.2"
+    }
+}
