@@ -1,0 +1,75 @@
+.app {
+  text-align: center;
+  font-family: sans-serif;
+  
+}
+
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, rgb(245, 245, 174), rgb(163, 248, 163));
+}
+
+.result * {
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  width: 109%;
+  
+}
+
+.result .win {
+  background-color: rgb(67, 253, 148);
+  animation: color-change 1s infinite;
+}
+
+.result .waiting {
+  background-color: rgb(215, 158, 253);
+}
+
+.result .invalid {
+  background-color: rgb(253, 174, 174);
+  color: rgb(10, 10, 10);
+}
+
+.result .match {
+  background-color: rgb(247, 227, 141);
+}
+
+.guess-word {
+  font-weight: bold;
+}
+
+.guess-form {
+  padding: 25px 25px 25px 25px;
+  width: 100%;
+  max-width: 700px;
+  background-color: rgb(252, 200, 252);
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.guess-form button:hover {
+  cursor: pointer;
+  background-color: rgb(9, 252, 62);
+}
+
+.guess-form button{
+  border: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+  background: linear-gradient(135deg, rgb(217, 245, 217),rgb(64, 206, 64));
+}
+
+@keyframes color-change {
+  0% {
+    color: rgb(248, 244, 244);
+  }
+  50% {
+    color: rgb(245, 176, 65);
+  }
+  100% {
+    color: rgb(79, 12, 235);
+  }
+}
