@@ -1,0 +1,121 @@
+#game {
+    border: 1px solid black;
+    font-family: sans-serif;
+    font-size: 1em;
+    background-size:contain;
+    background-image: url('https://i.redd.it/dldfyqesslj21.jpg');
+}
+
+.gameBody {
+    display: flex;
+    flex-direction: row;
+}
+
+.gameBody .guess {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 5px 5px 5px;
+}
+
+form {
+    text-align: center;
+}
+
+.guessForm input {
+    border: 0px;
+    border-radius: 3px;
+    border-bottom: 3px solid black;
+    font-size: large;
+}
+
+.loginForm input {
+    border: 0px;
+    border-radius: 3px;
+    border-bottom: 3px solid black;
+    font-size: large;
+}
+
+.loginForm button{
+    outline-style: auto;
+    border: 1px;
+    cursor: pointer;
+    margin-left: 10px;
+    overflow: hidden;
+    border-radius: 3px;
+    font-size: large;
+}
+
+#guess-submitBtn{
+    outline-style: auto;
+    border: 1px;
+    cursor: pointer;
+    margin-left: 10px;
+    overflow: hidden;
+    border-radius: 3px;
+    font-size: large;
+}
+
+.logoutBtn button{
+    outline-style:auto;
+    border: 0px;
+    border-radius: 3px;
+    padding-bottom: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: large;
+}
+
+.newGameBtn button{
+    outline-style:auto;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 3px;
+    padding-top: 2px;
+    font-size: large;
+}
+
+.gameBody .validList {
+    grid-column: 1 1 0;
+    padding: 5px 5px 5px 5px;
+}
+
+.wordList {
+    max-height: 400px;
+    overflow-y: scroll;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.welcomeMessage {
+    font-style:italic;
+    font-weight: bold;
+    font-size: large;
+}
+
+.result {
+    color: #cc0066;
+    font-weight: bold;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.grid-container {
+    display: grid;
+    opacity: 0.65;
+    grid-template-columns: auto auto auto auto auto auto;
+    background-color: #2196F3;
+    padding: 3px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 8px;
+    font-size: medium;
+    font-weight: 900;
+    text-align: center;
+}
