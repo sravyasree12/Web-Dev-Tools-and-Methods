@@ -1,0 +1,55 @@
+#inventory-app {
+  font-family: sans-serif;
+}
+
+.inventories {
+  list-style-type: round;
+  color: black;
+  margin: 5px 0px 5px;
+  padding-left: 20px;
+}
+
+.inventory {
+  margin: 5px 5px 5px;
+}
+
+.out-of-stock {
+  color: darkgray;
+}
+
+
+.inventory-container {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 5px 5px;
+}
+
+.inventory-name {
+  flex-grow: 7;
+}
+
+.inventory-quantity {
+  flex-grow: 2;
+  display: flex;
+  justify-content: space-around;
+}
+
+.inventory-quantity button {
+  border-radius: 50%;
+  width: 23px;
+  height:23px;
+  text-align: center;
+}
+
+.form {
+  padding: 5px 5px 5px;
+}
+
+.form * {
+  border: none;
+}
+
+.status {
+  padding: 5px 5px 5px;
+  margin: 5px 0px 0px;
+}

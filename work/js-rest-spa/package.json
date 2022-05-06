@@ -1,0 +1,25 @@
+{
+    "name": "counters",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Sravya Sree Ogirala",
+    "license": "ISC",
+    "dependencies": {
+      "cookie-parser": "^1.4.5",
+      "express": "^4.17.1",
+      "uuid": "^8.3.2"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.14",
+      "@babel/core": "^7.17.8",
+      "@babel/preset-env": "^7.16.11",
+      "babel-loader": "^8.2.2",
+      "webpack": "^5.26.3",
+      "webpack-cli": "^4.5.0"
+    }
+}
